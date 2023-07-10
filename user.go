@@ -68,7 +68,7 @@ func (this *User) DoMessage(msg string) {
 		}
 		this.server.mapLock.Unlock()
 	} else if len(msg) > 7 && msg[:7] == "rename|" {
-		//rename|张三
+		//rename｜张三
 		name := strings.Split(msg, "|")[1]
 		user := this.server.OnlineMap[name]
 		// 说明已经存在
