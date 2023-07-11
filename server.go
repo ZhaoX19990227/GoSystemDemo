@@ -50,7 +50,7 @@ func (this *Server) Handler(conn net.Conn) {
 	user.OnLine()
 
 	// 广播当前用户上线消息
-	this.BroadCast(user, user.Name+"已上线")
+	// this.BroadCast(user, user.Name+"已上线")
 
 	isLive := make(chan bool)
 
